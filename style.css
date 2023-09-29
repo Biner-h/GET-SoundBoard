@@ -1,11 +1,55 @@
-div {
-    height: 150px;
-    width: 150px;
-    border: 2px solid gray;
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+  padding: 0;
+  font-family: "Share Tech", sans-serif;
+  font-size: 68px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5490196078);
+  background-color: #454545;
+  background-color: #fff8f8;
+  opacity: 1;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #232323 37px), repeating-linear-gradient(rgba(0, 0, 0, 0.3333333333), #581818);
 }
-.one {
-    background-color: blueviolet;
+
+.img {
+  width: 350px;
 }
-.two {
-    background-color: chocolate;
+
+.container {
+  -moz-columns: row;
+       columns: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
+
+.square {
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.3s, transform 0.1s;
+  margin: 10px;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background-color: rgb(0, 0, 0);
+}
+
+.square:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px rgb(255, 0, 0);
+}/*# sourceMappingURL=style.css.map */
